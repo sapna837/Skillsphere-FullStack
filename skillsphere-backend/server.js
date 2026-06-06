@@ -24,7 +24,7 @@ const JobSchema = new mongoose.Schema({
 });
 const Job = mongoose.model('Job', JobSchema);
 
-// 🌟 2. NEW: Application Schema (Must be defined BEFORE the model)
+// 🌟 2. NEW: Application Schema 
 const ApplicationSchema = new mongoose.Schema({
   jobId: mongoose.Schema.Types.ObjectId,
   jobTitle: String,
